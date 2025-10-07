@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createtodo, gettodo, updatetodo, deletetodo } = require('../controllers/todoController');
+const { createtodo, gettodo, updatetodo, deletetodo } = require('../controllers/todocontroller');
 const { verifyToken } = require('../middleware/authmiddleware');
 
 router.post('/create', verifyToken, createtodo);

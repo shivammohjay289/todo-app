@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login / Signup / Todo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { margin-bottom: 20px; }
+    input { padding: 5px; margin: 5px 0; }
+    button { padding: 5px 10px; }
+    #signupSection, #todoSection { display: none; }
+    li { margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <div id="loginSection">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required /><br>
+      <input type="password" id="loginPassword" placeholder="Password" required /><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" id="showSignup">Signup</a></p>
+  </div>
+
+  <div id="signupSection">
+    <h2>Signup</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Name" required /><br>
+      <input type="email" id="email" placeholder="Email" required /><br>
+      <input type="password" id="password" placeholder="Password" required /><br>
+      <button type="submit">Signup</button>
+    </form>
+    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+  </div>
+
+  <div id="todoSection">
+    <h2>Todo List</h2>
+    <p id="welcome"></p>
+    <button id="logout">Logout</button><br><br>
+    <input type="text" id="taskInput" placeholder="Enter task" />
+    <button id="addTask">Add</button>
+    <ul id="todoList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
